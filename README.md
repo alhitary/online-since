@@ -11,12 +11,12 @@ Build Status: [![Build Status](https://travis-ci.org/3D-I/online-since.svg)](htt
 ## Installation
 
 ### 1. clone
-Clone (or download and move) the repository into the folder ext/3D-I/online_since
+Clone (or download and move) the repository into the folder ext/threedi/online_since
 (create it if not already exists):
 
 ```
 cd phpBB3
-git clone https://github.com/3D-I/online-since.git ext/3D-I/online_since/
+git clone https://github.com/3D-I/online-since.git ext/threedi/online_since/
 ```
 
 ### 2. activate
