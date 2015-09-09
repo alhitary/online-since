@@ -4,7 +4,7 @@ phpBB3.1 extension that shows the length of time your board has been online. in 
 
 This is a port of the MOD I made first for phpBB2 and for phpBB3 (Olympus) then.
 
-Build Status:
+Build Status: [![Build Status](https://travis-ci.org/3D-I/online-since.svg)](https://travis-ci.org/3D-I/online-since)
 
 ![Screenshot](online-since.png)
 
