@@ -1,0 +1,10 @@
+services:
+    threedi.online_since.listener:
+        class: threedi\online_since\event\listener
+        arguments:
+            - @auth
+            - @config
+            - @template
+            - @user
+        tags:
+            - { name: event.listener }
