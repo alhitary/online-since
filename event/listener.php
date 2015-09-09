@@ -77,7 +77,7 @@ class listener implements EventSubscriberInterface
 	public function display_online_since($event)
 	{
 		$year = date("Y", time());
-		$days_of_month = array(   
+		$days_of_month = array(
 			array(0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31
 			),
 			array(0, 31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31
@@ -89,13 +89,13 @@ class listener implements EventSubscriberInterface
 
 		list($year1, $month1, $day1) = split('-', $start_date);
 		list($year2, $month2, $day2) = split('-', $today_date);
-      
+
 		$diff_year = $year2 - $year1;
 		$diff_month = $month2 - $month1;
 		$diff_day = $day2 - $day1;
-   
+
 		$is_leap = ((($year2)%4 == 0 && ($year2)%100 != 0 || ($year2)%400 == 0) ? 1 : 0);
-      
+
 		/* Do obvious corrections (days before months!)
 		*
 		* This is a loop in case the previous month is
@@ -114,7 +114,7 @@ class listener implements EventSubscriberInterface
 			--$diff_month;
 			$diff_day += $prev_month_days;
 		}
-   
+
 		if ($diff_month < 0)
 		{
 			/* Borrow from the previous year */
