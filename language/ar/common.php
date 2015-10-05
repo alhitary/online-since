@@ -35,13 +35,19 @@ if (empty($lang) || !is_array($lang))
 // in a url you again do not need to specify an order e.g., 'Click %sHERE%s' is fine
 
 $lang = array_merge($lang, array(
-	'ONLINE_START'		=> 'منذ',
+	'ONLINE_START'		=> 'منذ ',
 	'ONLINE_SINCE'		=> ' لـ ',
-	'ONLINE_YEAR'		=> 'سنة',
-	'ONLINE_YEARS'		=> 'سنوات',
-	'ONLINE_MONTH'		=> 'شهر',
-	'ONLINE_MONTHS'		=> 'شهور',
-	'ONLINE_DAY'		=> 'يوم',
-	'ONLINE_DAYS'		=> 'أيام',
 	'ONLINE_TITLE'		=> 'تاريخ تأسيس المنتدى',
+	'ONLINE_YEAR'	=> array(
+		1	=> '<b>%d</b> سنة ',
+		2	=> '<b>%d</b> سنوات ',
+	),
+	'ONLINE_MONTH'	=> array(
+		1	=> '<b>%d</b> شهر ',
+		2	=> '<b>%d</b> شهور ',
+	),
+	'ONLINE_DAY'	=> array(
+		1   => '<b>%d</b> يوم',
+		2   => '<b>%d</b> أيام',
+	)
 ));
